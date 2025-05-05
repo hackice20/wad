@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eCommerce Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <div class="bg-dark text-white p-3 vh-100" style="width: 220px;">
+      <h4 class="mb-4">ShopDash</h4>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a class="nav-link text-white" href="#">Dashboard</a></li>
+        <li class="nav-item mb-2"><a class="nav-link text-white" href="#">Orders</a></li>
+        <li class="nav-item mb-2"><a class="nav-link text-white" href="#">Products</a></li>
+        <li class="nav-item mb-2"><a class="nav-link text-white" href="#">Customers</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Settings</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-grow-1">
+      <nav class="navbar bg-light px-4">
+        <span class="navbar-brand mb-0 h5">Welcome, Admin</span>
+      </nav>
+
+      <div class="container py-4">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <h6 class="card-title">Total Sales</h6>
+                <h4>$12,340</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <h6 class="card-title">Orders</h6>
+                <h4>320</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <h6 class="card-title">Customers</h6>
+                <h4>215</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <h6 class="card-title">Products</h6>
+                <h4>128</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder table -->
+        <div class="mt-5">
+          <h5>Recent Orders</h5>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Status</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>Smartphone</td>
+                <td><span class="badge bg-success">Shipped</span></td>
+                <td>$699</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>Headphones</td>
+                <td><span class="badge bg-warning">Pending</span></td>
+                <td>$199</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

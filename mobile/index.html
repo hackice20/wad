@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopSwift</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- jQuery and jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+    }
+
+    .ui-page {
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .products {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 0 2rem;
+    }
+
+    .product {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin-top: 0;
+    }
+
+    .about, .contact {
+      padding: 2rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+  <div data-role="page" id="home">
+
+    <header>
+      <div>ShopSwift</div>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div role="main" class="ui-content">
+
+      <section class="hero">
+        <h1>Welcome to ShopSwift</h1>
+        <p>Find the best deals on the latest gadgets</p>
+        <a href="#products" data-role="button">Shop Now</a>
+      </section>
+
+      <section class="products" id="products">
+        <div class="product">
+          <h3>Smart Watch</h3>
+          <p>₹3,999</p>
+        </div>
+        <div class="product">
+          <h3>Wireless Earbuds</h3>
+          <p>₹1,299</p>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We’re a modern online store offering handpicked tech products at unbeatable prices.</p>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button>Send</button>
+      </section>
+
+    </div>
+
+    <footer>
+      © 2025 ShopSwift. All rights reserved.
+    </footer>
+    
+  </div>
+
+</body>
+</html>
